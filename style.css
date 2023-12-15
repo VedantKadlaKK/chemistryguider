@@ -1,0 +1,275 @@
+
+body {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Apply opacity to the background image only */
+body::before {
+    content: "";
+    background: url('chh.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: opacity(0.2); /* Set the opacity to 50% */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Reset default browser styles */
+body, h1, p, label, input[type="text"], button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a dark background color */
+body {
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    color: #FFF;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the header */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Create a navigation bar */
+/* Add a higher z-index to the navigation bar to keep it on top */
+.navigation {
+    background-color: #1E1E1E;
+    padding: 10px 0;
+    position: fixed; /* Fixed position at the top */
+    top: 0; /* Stick to the top of the viewport */
+    left: 0; /* Extend to the left edge of the viewport */
+    right: 0; /* Extend to the right edge of the viewport */
+    z-index: 2; /* Add a higher z-index */
+}
+
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation li {
+    margin: 0 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navigation a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+    transition: all ease-in-out 0.4s;
+}
+
+
+/* Style the container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.scroll {
+    min-height: 10000px;
+}
+
+/* Style the chatbox */
+.chatbox {
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 10px;
+}
+
+/* Style labels in the chatbox */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style the user query input box */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #1E1E1E;
+    color: #FFF;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the element card for answers */
+.element-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #1e1e1e;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 600px;
+    display: none; /* Initially hidden */
+}
+
+/* Style the answer text */
+#answerContainer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style the answer text for different content */
+.element-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.element-symbol,
+.element-description {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Add hover effect on submit button */
+button:hover {
+    background-color: #4776a5;
+    font-size: 17px;
+    transition: all ease-in-out 0.4s;
+}
+footer {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 10px 0; /* Add padding for spacing */
+    position: fixed; /* Position at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom of the content area */
+    left: 0; /* Extend to the left edge of the viewport */
+    right: 0; /* Extend to the right edge of the viewport */
+}
+
+/* Style the dropdown menus */
+select {
+
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #1E1E1E;
+    color: #FFF;
+    border: 1px solid #555;
+    border-radius: 5px;
+    appearance: none; /* Remove default styles in some browsers */
+    -webkit-appearance: none; /* Remove default styles in Webkit browsers */
+    -moz-appearance: none; /* Remove default styles in Firefox */
+    cursor: pointer;
+}
+
+/* Style the dropdown options */
+select option {
+    
+    background-color: #1E1E1E;
+    color: #FFF;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+/* Style the labels for the dropdowns */
+label {
+    
+    display: block;
+    margin-bottom: 5px;
+    color: #FFF;
+}
+
+.organic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074e4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.organic-button:hover {
+    background-color: #0055a0; /* Change color on hover */
+}
+
+.thermodynamics-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074e4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.thermodynamics-button:hover {
+    background-color: #0055a0; /* Change color on hover */
+}
+
+/* Align label, input, and dropdown in the same horizontal line */
+label,
+input,
+select {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%; /* Adjust the width as needed */
+    margin-right: 10px; /* Add some spacing between elements */
+    text-align: left;
+}
+
+/* Adjust label width for smaller screens */
+@media (max-width: 768px) {
+    label,
+    input,
+    select {
+        display: block;
+        width: 100%; /* Full width for smaller screens */
+        margin-right: 0; /* Remove spacing for smaller screens */
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="navigation">
+            <ul>
+                <li><a href="home.html" class="home">Home</a></li>
+                <li><a href="index.html" class="home">Chat Now</a></li>
+                <li><a href="about.html" class="about">About</a></li>
+                <li><a href="instru.html" class="instru">Instructions</a></li>
+                <li><a href="shop.html" class="shop">Shop</a></li>
+            </ul>
+        </div>
+
+        <h1><br>Periodic Table Chatbot</h1>
+
+        <div class="container">
+            <div class="chatbox">
+                <label for="userQuery">Enter an Element Name or Query:</label>
+                <input type="text" id="userQuery" placeholder="Enter an element or query">
+            </div><br>
+
+            <div class="chatbox">
+                <button id="submitQuery">Submit Query</button>
+            </div>
+            <br>
+
+            <div class="element-card" id="answerContainer">
+                <!-- Content will be displayed here -->
+            </div> <br>
+
+            <!-- Add a button for Organic Chemistry page -->
+            <div class="chatbox">
+                <a href="organic-chemistry.html" class="organic-button">Organic Chemistry</a>
+            </div>
+
+            <div class="chatbox">
+                <a href="thermo.html" class="thermodynamics-button">Thermodynamics</a>
+            </div>
+            <br><br>
+
+            <!-- Add the answerContainer element here with the id attribute -->
+
+        </div>
+    </div>
+
+    <!-- Include the existing script for the Periodic Table Chatbot -->
+    <script src="script.js"></script>
+
+    <footer>
+        <p>© 2023 Periodic Table Chatbot</p>
+    </footer>
+</body>
+</html>

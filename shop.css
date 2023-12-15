@@ -1,0 +1,95 @@
+@import "style.css";
+
+
+body {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+/* Apply opacity to the background image only */
+body::before {
+    content: "";
+    background: url('chh.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: opacity(0.2); /* Set the opacity to 50% */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Add general styles */
+/* ... */
+
+.product {
+    margin: 20px;
+    padding: 20px;
+    background: #1e1e1e;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.product h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product .price {
+    font-weight: bold;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074e4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #0055a0; /* Change color on hover */
+}
+footer {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 10px 0; /* Add padding for spacing */
+    position: fixed; /* Position at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom of the content area */
+    left: 0; /* Extend to the left edge of the viewport */
+    right: 0; /* Extend to the right edge of the viewport */
+}

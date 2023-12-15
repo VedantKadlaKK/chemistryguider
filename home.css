@@ -1,0 +1,77 @@
+@import "style.css";
+
+body {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+/* Apply opacity to the background image only */
+body::before {
+    content: "";
+    background: url('chh.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: opacity(0.2); /* Set the opacity to 50% */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Style for the circular image */
+.circular-image {
+    border-radius: 50%;
+    width: 30%; /* Smaller size */
+    display: block;
+    margin: 50px auto; /* Add margin to create distance */
+    aspect-ratio: 1 / 1; /* Ensure it maintains a 1:1 aspect ratio for a perfect circle */
+}
+
+/* Style for the creator's info */
+.creator-info {
+    /*background-color: #1e1e1e; /* Add a semi-transparent white background */
+    padding: 20px;
+    text-align: left;
+    max-width: 80%; /* Limit the content width for readability */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Add this to your CSS file or within a <style> tag in the HTML head */
+footer {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 10px 0; /* Add padding for spacing */
+    position: absolute; /* Position at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom of the viewport */
+}
+
+/* Style for the footer */
+footer {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 10px 0; /* Add padding for spacing */
+    position: fixed; /* Position at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom of the content area */
+    left: 0; /* Extend to the left edge of the viewport */
+    right: 0; /* Extend to the right edge of the viewport */
+}
+
+
+/* Add any additional styling here for your content */

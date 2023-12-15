@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="navigation">
+            <ul>
+                <li><a href="home.html" class="home">Home</a></li>
+                <li><a href="index.html" class="home">Chat Now</a></li>
+                <li><a href="about.html" class="about">About</a></li>
+                <li><a href="instru.html" class="instru">Instructions</a></li>
+                <li><a href="shop.html" class="shop">Shop</a></li>
+            </ul>
+        </div>
+
+        <div class="container" id="thermodynamics"><br><br>
+            <h1>Thermodynamics Calculator</h1>
+            <label for="problemSelect">Select a Thermodynamic Problem:</label><br>
+            <select id="problemSelect">
+                <option value="idealGasLaw">Ideal Gas Law</option>
+                <option value="heatTransfer">Heat Transfer</option>
+                <option value="workDone">Work Done</option>
+            </select><br>
+            <br>
+
+            <button onclick="proceedToInputs()">Proceed</button><br>
+
+            <div id="parameters">
+                <!-- Input fields for parameters will be displayed here -->
+            </div>
+
+            <br><button id="calculateButton" style="display: none;" onclick="calculate()">Calculate</button>
+
+            <br><p id="result">Result: </p><br><br>
+
+            <!-- Add a "Show Process" button below the result -->
+            <!-- Add a "Show Process" button below the result -->
+            <button id="showProcessButton" style="display: none;" onclick="showProcess()">Show Process</button><br>
+
+            <!-- Add a div to display the step-by-step process -->
+            <div id="processContainer" style="display: none;">
+                <h2>Step-by-Step Process:</h2>
+                <ol id="processList"></ol>
+                <br><br><br>
+            </div>
+
+
+        <!-- Include the existing script for the Periodic Table Chatbot -->
+        <script src="script.js"></script>
+        <script src="thermo-script.js"></script> <!-- Add a separate script for the Thermodynamics Calculator -->
+        <footer>
+            <p>© 2023 Periodic Table Chatbot</p>
+        </footer>
+    </div>
+</body>
+</html>

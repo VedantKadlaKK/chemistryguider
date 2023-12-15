@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Chemistry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="navigation">
+            <ul>
+                <li><a href="home.html" class="home">Home</a></li>
+                <li><a href="index.html" class="home">Chat Now</a></li>
+                <li><a href="about.html" class="about">About</a></li>
+                <li><a href="instru.html" class="instru">Instructions</a></li>
+                <li><a href="shop.html" class="shop">Shop</a></li>
+            </ul>
+        </div>
+
+        <h1><br>Organic Chemistry</h1>
+
+        <div class="container">
+            <!-- Add the dropdown menus and other elements for organic chemistry here -->
+            <div class="chatbox">
+                <label for="chemical-type">Select Chemical Type:</label>
+                <select id="chemical-type">
+                    <option value="alcohols">Alcohols</option>
+                    <option value="phenols">Phenols</option>
+                    <option value="ethers">Ethers</option>
+                </select>
+            </div>
+            
+            <div class="chatbox">
+                <label for="compound-list">Select Compound:</label>
+                <select id="compound-list"></select>
+            </div>
+            
+            <div class="chatbox">
+                <label for="info-detail">Select Information Detail:</label>
+                <select id="info-detail">
+                    <option value="simple">Simple</option>
+                    <option value="detailed">Detailed</option>
+                </select>
+            </div>
+            
+            <div class="chatbox">
+                <button id="show-info">Show Info</button>
+            </div>
+            
+            <div class="chatbox">
+                <label for="iupac-name">IUPAC Name:</label>
+                <div id="iupac-name"></div>
+            </div>
+            
+            <div class="chatbox">
+                <label for="structural-formula">Structural Formula:</label>
+                <div id="structural-formula"></div>
+            </div>
+
+            <!-- Add a single output div for both simple and detailed information -->
+            <div class="chatbox">
+                <label for="info-output">Information:</label>
+                <div id="info-output"></div>
+            </div>
+
+            <br>
+
+            <!-- Add the dropdown menu for information detail -->
+            <!-- <div class="chatbox">
+                <label for="info-detail">Information Detail:</label>
+                <select id="info-detail">
+                    <option value="simple">Simple</option>
+                    <option value="detailed">Detailed</option>
+                </select>
+            </div>
+
+            <div class="chatbox">
+                <button id="showInfoButton">Show Info</button>
+            </div> -->
+            
+            <div class="output">
+                <div id="outputInfo"></div>
+            </div>
+            
+            <br><br><br>
+        </div>
+
+        
+    </div>
+
+    <!-- Include the organic compounds script for this page -->
+    <script src="organic-compounds.js"></script>
+
+    <footer>
+        <p>© 2023 Periodic Table Chatbot</p>
+    </footer>
+</body>
+</html>
